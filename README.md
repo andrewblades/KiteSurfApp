@@ -21,3 +21,8 @@ react-leaflet leaflet
 -- implementare redux , actiuni, reducers, si componenta store, 
 - prin Providerul oferit de react-redux am dat acces tuturor componenetelor la store
 
+# Pasul 4 Data Tabel si afisare locatii pe Harta
+
+-- crearea componentului tabel cu toate datele oferite de API 
+-- filtrarea datelor in functie de categorie si numele lor
+-- afisare locatii pe harta 
