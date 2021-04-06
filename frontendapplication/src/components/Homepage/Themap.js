@@ -15,7 +15,21 @@ function Themap({ data }) {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 {data.map((data) => (
-                    <Marker position={[data.lat, data.long]}></Marker>
+                    <Marker position={[data.lat, data.long]}>
+                        <Popup>
+                            <h3>{data.name}</h3>
+                            <p>{data.country}</p>
+                            <br />
+                            <h4>Wind probability</h4>
+                            <p>{data.probability}%</p>
+                            <h4>Latitude</h4>
+                            <p>{data.lat}*N</p>
+                            <h4>Longitude</h4>
+                            <p>{data.long}*W</p>
+                            <h4>When to go</h4>
+                            <p>{data.month}</p>
+                        </Popup>
+                    </Marker>
                 ))}
 
             </MapContainer>
