@@ -35,8 +35,6 @@ export const fetchLocation = () => {
             .then(data => {
                 console.log(data);
                 dispatch(fetchLocationSuccess(data));
-
-            })
-            .catch((e) => dispatch(fetchLocationFail(e.message)))
+            }).catch((e) => dispatch(fetchLocationFail(e.message)))
     }
 }
