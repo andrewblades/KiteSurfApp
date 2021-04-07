@@ -1,8 +1,9 @@
+
 export const UserActionTypes = {
     FETCH_USER_START: 'FETCH_USER_START',
     FETCH_USER_SUCCESS: 'FETCH_USER_SUCCESS',
     FETCH_USER_FAIL: 'FETCH_USER_FAIL',
-
+    ADD_USER: 'ADD_USER'
 }
 
 
@@ -27,6 +28,8 @@ export const fetchUserFail = (errMessage) => ({
 
 
 
+
+
 export const getUser = () => {
     return (dispatch) => {
         dispatch(fetchUserStart())
@@ -39,3 +42,4 @@ export const getUser = () => {
             .catch((e) => dispatch(fetchUserFail(e.errMessage)))
     }
 }
+

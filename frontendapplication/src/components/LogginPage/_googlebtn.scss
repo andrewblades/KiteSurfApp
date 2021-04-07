@@ -1,0 +1,20 @@
+.signBtn{
+   background: none;
+	color: rgb(247, 247, 247);
+	border: none;
+	padding: 0;
+	font-family: 'Roboto',sans-serif;
+    margin-right: 4rem;
+	cursor: pointer;
+	font-size: 2.5rem;
+    transition:border 0.1s ease-out;
+    background-color:rgb(240, 6, 6);
+    border: 1rem solid rgb(240, 6, 6);
+    border-radius: 8px;
+}
+
+.signBtn:hover{
+    background-color:rgb(17, 17, 16);
+    border: 1rem solid rgb(17, 17, 16);
+    border-radius: 8px;
+}

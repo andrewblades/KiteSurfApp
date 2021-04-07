@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Lobster', sans-serif;
+}
+
+h2 {
+  font-size: 8rem;
+  font-family: 'Lobster', sans-serif;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.navigation {
+  height: 8vh;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #bd7aeb;
+  background: -webkit-gradient(linear, left top, right top, from(#bd7aeb), color-stop(50%, #f68585), to(#fcc981));
+  background: linear-gradient(90deg, #bd7aeb 0%, #f68585 50%, #fcc981 100%);
+}
+
+.navigation .link {
+  text-decoration: none;
+  color: #141414;
+  font-size: 32px;
+}
+
+.navigation .link h4 {
+  font-family: 'Lobster',sans-serif;
+  padding-left: 8rem;
+  font-size: 7rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.navigation .navRightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .navRightSide .link {
+  font-size: 2.5rem;
+  font-family: 'Roboto',sans-serif;
+  margin-right: 10rem;
+  -webkit-transition: border 0.1s ease-out;
+  transition: border 0.1s ease-out;
+  background-color: #fff;
+  border: 1rem solid #fff;
+  border-radius: 8px;
+}
+
+.navigation .navRightSide .link:hover {
+  background-color: #90dff3;
+  border: 1rem solid #90dff3;
+  border-radius: 8px;
+}
+
+.signBtn {
+  background: none;
+  color: #f7f7f7;
+  border: none;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+  margin-right: 4rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  -webkit-transition: border 0.1s ease-out;
+  transition: border 0.1s ease-out;
+  background-color: #f00606;
+  border: 1rem solid #f00606;
+  border-radius: 8px;
+}
+
+.signBtn:hover {
+  background-color: #111110;
+  border: 1rem solid #111110;
+  border-radius: 8px;
+}
+
+.searchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vh;
+}
+
+.searchContainer h2 {
+  margin-bottom: 4rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  border: 1rem solid #fff;
+  border-radius: 8px;
+}
+
+.searchContainer .search {
+  width: 50%;
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+}
+
+.searchContainer .filterBtn {
+  background: none;
+  color: #f7f7f7;
+  border: none;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+  cursor: pointer;
+  font-size: 2.5rem;
+  -webkit-transition: border 0.1s ease-out;
+  transition: border 0.1s ease-out;
+  background-color: #f00606;
+  border: 1rem solid #f00606;
+  border-radius: 8px;
+}
+
+.searchContainer .filterItemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  margin-top: 3rem;
+}
+
+.searchContainer input {
+  height: 3.24rem;
+  width: 3.28rem;
+  background: #f1f5f8;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+  border: 3px solid #b8c2cc;
+  border-radius: 0.125rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.searchContainer label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: arial;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+table {
+  overflow-y: scroll;
+  height: 300px;
+  display: block;
+  margin-left: 5rem;
+}
+
+tr, th {
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  width: 200px;
+  font-size: 20px;
+  height: 50px;
+}
+
+th {
+  background-color: #fff;
+}
+
+td {
+  height: 90px;
+  border: 1px solid #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Card {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 350px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  height: 400px;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px -2px 57px -5px rgba(0, 0, 0, 0.66);
+          box-shadow: 0px -2px 57px -5px rgba(0, 0, 0, 0.66);
+  background: #bd7aeb;
+  background: -webkit-gradient(linear, left top, right top, from(#bd7aeb), color-stop(50%, #f68585), to(#fcc981));
+  background: linear-gradient(90deg, #bd7aeb 0%, #f68585 50%, #fcc981 100%);
+}
+
+.Card h2 {
+  margin-bottom: 10rem;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #202020;
+}
+
+.Card p {
+  font-size: 20px;
+}
+
+.cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SpotCard {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 400px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  height: 600px;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px -2px 57px -5px rgba(0, 0, 0, 0.66);
+          box-shadow: 0px -2px 57px -5px rgba(0, 0, 0, 0.66);
+  background: #bd7aeb;
+  background: -webkit-gradient(linear, left top, right top, from(#bd7aeb), color-stop(50%, #f68585), to(#fcc981));
+  background: linear-gradient(90deg, #bd7aeb 0%, #f68585 50%, #fcc981 100%);
+}
+
+.SpotCard .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+}
+
+.SpotCard h3 {
+  font-size: 40px;
+  color: #202020;
+}
+
+.SpotCard .subTitle {
+  color: #302f2f;
+}
+
+.SpotCard p {
+  font-size: 20px;
+}
+
+.spotCardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,29 @@
+.Card{
+   color: #fff;
+   
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   width: 350px;
+   margin-bottom: 5rem;
+   margin-top: 5rem;
+   height: 400px;
+   border-radius: 18px;
+   box-shadow: 0px -2px 57px -5px rgba(0,0,0,0.66);
+   background: rgb(189,122,235);
+   background: linear-gradient(90deg, rgba(189,122,235,1) 0%, rgba(246,133,133,1) 50%, rgba(252,201,129,1) 100%);
+   
+   h2{ 
+       margin-bottom: 10rem;
+       font-size: 40px;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       color: #202020
+   }
+   p{
+       font-size: 20px;
+   }
+}

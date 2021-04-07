@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchLocation } from '../../Redux/actions/Locationaction'
 
 import Spot from './Spot'
+import '../../Stylesheet/App.css'
 
 class Homepage extends React.Component {
 
@@ -23,7 +24,7 @@ class Homepage extends React.Component {
             )
         }
         return (
-            <div>
+            <div className='spotCardsContainer'>
                 {location.map((u) =>
                     <Spot data={u} />
                 )}

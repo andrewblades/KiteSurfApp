@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { getUser } from '../../Redux/actions/UserAction'
 import User from './User'
+import '../../Stylesheet/App.css'
 
 class Userpage extends React.Component {
 
@@ -22,7 +23,7 @@ class Userpage extends React.Component {
         }
 
         return (
-            <div>
+            <div className='cardsContainer'>
                 {user.map((u) =>
                     <User data={u} />
                 )}

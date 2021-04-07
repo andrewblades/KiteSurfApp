@@ -1,0 +1,55 @@
+html{
+    font-size:62.5%;
+}
+
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+}
+body{
+    background-color: #fff
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Lobster', sans-serif;
+}
+h2{
+    font-size: 8rem;
+    font-family: 'Lobster', sans-serif;
+}
+
+h3{
+  font-size: 3.5rem;
+}
+
+h4{
+    font-size: 3rem;
+}
+p{
+    font-size: 2.5rem;
+}
+
+.leaflet-container{
+  width: 100%;
+  height: 80vh;
+  margin:auto;
+  border-radius: 10px;
+  z-index: 1;
+  
+}
+
+@import '../components/Nav/Nav';
+@import '../components/LogginPage/googlebtn';
+@import '../components/LocationTabel/SearchLocation';
+@import '../components/LocationTabel/Tabel';
+@import '../components/Userpage/User';
+@import '../components/Userpage/Userpage';
+@import '../components/Spotpage/Spot';
+@import '../components/Spotpage/SpotPage';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Table from './Tabel'
-
+import '../../Stylesheet/App.css'
 function LocationTabel({ location }) {
 
     const data = location
@@ -28,31 +28,37 @@ function LocationTabel({ location }) {
 
     return (
 
-        <div>
-            <div>
+        <div >
+            <div className='searchContainer'>
 
 
                 <h2>Locations</h2>
-                <input type="text" value={q} onChange={(e) => setQ(e.target.value)} />
+                <input className='search' type="text" value={q} onChange={(e) => setQ(e.target.value)} />
                 {!showFilters ?
-                    <button onClick={() => setShowFilters(true)}>Filters</button>
+                    <button className='filterBtn' onClick={() => setShowFilters(true)}>Filters</button>
                     :
-                    <button onClick={() => setShowFilters(false)}>Hide Filters</button>
+                    <button className='filterBtn' onClick={() => setShowFilters(false)}>Hide Filters</button>
                 }
+                <div className='filterItemsContainer'>
+                    {showFilters ?
+                        columns && columns.map(column =>
+                            <div>
+                                <label>
 
-                {showFilters ?
-                    columns && columns.map(column => <label>
-                        <input type='checkbox' checked={searchColumns.includes(column)}
-                            onChange={() => {
-                                const checked = searchColumns.includes(column)
-                                setSearchColumns(prev => checked ? prev.filter(sc => sc !== column) : [...prev, column])
-                            }} />
-                        {column}
+                                    <input type='checkbox' checked={searchColumns.includes(column)}
+                                        onChange={() => {
+                                            const checked = searchColumns.includes(column)
+                                            setSearchColumns(prev => checked ? prev.filter(sc => sc !== column) : [...prev, column])
+                                        }} />
+                                    {column}
 
-                    </label>
-                    ) : null
-                }
 
+                                </label>
+                            </div>
+
+                        ) : null
+                    }
+                </div>
             </div>
             <div><Table data={search(data)} /></div>
         </div>

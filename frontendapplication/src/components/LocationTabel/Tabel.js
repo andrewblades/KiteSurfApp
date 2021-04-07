@@ -1,13 +1,13 @@
 import React from 'react'
-
+import '../../Stylesheet/App.css'
 function Table({ data }) {
 
     const columns = data[0] && Object.keys(data[0])
 
     return (
-        <div>
-            <table cellPadding={20} cellSpacing={15} >
-                <thead>
+        <div >
+            <table cellPadding={1} cellSpacing={0} >
+                <thead >
                     <tr>{data[0] && columns.map(heading => <th>{heading}</th>)}</tr>
                 </thead>
                 <tbody>
@@ -20,7 +20,7 @@ function Table({ data }) {
                     </tr>)}
                 </tbody>
             </table>
-        </div>
+        </div >
     )
 }
 
