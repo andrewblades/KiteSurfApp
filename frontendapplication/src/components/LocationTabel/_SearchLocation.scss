@@ -73,3 +73,35 @@
 }
  
 }
+
+@media screen and (max-width: 800px){
+    .filterItemsContainer{
+         display: flex;
+         height: 16px;
+        margin-top: 3rem;
+    }
+
+        input {
+        height: 2.24rem;
+	    width: 2.28rem;
+	    background: rgba(241, 245, 248, 1);
+	    transition: background 250ms;
+	    border: 3px solid rgba(184, 194, 204, 1);
+	    border-radius: 0.125rem;
+        display:inline-block;
+	    vertical-align:middle;	
+    }
+
+    label {  
+    display:inline-block;
+	vertical-align:middle;	
+    font-family: arial;
+   
+   
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 10px;
+}
+}

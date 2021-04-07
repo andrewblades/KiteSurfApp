@@ -40,3 +40,7 @@ react-leaflet leaflet
 -- stilizare forma de filtrare tabel si stilizare tabel
 -- stilizare checkbox-uri afisare orizontal
 -- stilizare pagini Spots si Users cu carduri pentru afisare detalii
+
+# Pasul 6 Stilizare mobile
+
+-- adaugare functionalitate la navigatie printr-un buton 'burger' ce afiseaza un meniu pe ecranele mici
