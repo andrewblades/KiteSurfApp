@@ -26,3 +26,17 @@ react-leaflet leaflet
 -- crearea componentului tabel cu toate datele oferite de API 
 -- filtrarea datelor in functie de categorie si numele lor
 -- afisare locatii pe harta 
+
+
+# Pasul 5 Implementare autentificare folosing OAuth Google Api
+
+-- implementare ca si component si implementare redux
+-- memorare utilizator pe baza de token
+
+
+# Pasul 5 Stilizare pentru desktop
+
+-- stilizare navbar cu butoane pentru accesare linkuri si button de Sign in
+-- stilizare forma de filtrare tabel si stilizare tabel
+-- stilizare checkbox-uri afisare orizontal
+-- stilizare pagini Spots si Users cu carduri pentru afisare detalii
