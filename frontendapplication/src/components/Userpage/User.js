@@ -6,7 +6,7 @@ function User({ data }) {
         <div >
             <div className='Card'>
                 <img src={data.avatar} alt="" />
-                <h2>{data.name}</h2>
+                <h3>{data.name}</h3>
                 <p>{data.email}</p>
                 <p>Has joined in: </p>
                 <p>{data.createdAt}</p>

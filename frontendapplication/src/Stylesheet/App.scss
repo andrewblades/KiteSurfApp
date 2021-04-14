@@ -36,14 +36,6 @@ p{
     font-size: 2.5rem;
 }
 
-.leaflet-container{
-  width: 100%;
-  height: 80vh;
-  margin:auto;
-  border-radius: 10px;
-  z-index: 1;
-  
-}
 
 @import '../components/Nav/Nav';
 @import '../components/LogginPage/googlebtn';
@@ -53,3 +45,5 @@ p{
 @import '../components/Userpage/Userpage';
 @import '../components/Spotpage/Spot';
 @import '../components/Spotpage/SpotPage';
+@import '../components/Homepage/homePage';
+@import '../components/Footer/footer'

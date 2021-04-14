@@ -5,8 +5,8 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-   background: rgb(189,122,235);
-   background: linear-gradient(90deg, rgba(189,122,235,1) 0%, rgba(246,133,133,1) 50%, rgba(252,201,129,1) 100%);
+background: rgb(55,151,194);
+background: linear-gradient(90deg, rgba(55,151,194,1) 0%, rgba(255,255,255,1) 91%);
     .link{
         text-decoration: none;
         color: rgb(20, 20, 20);
@@ -29,14 +29,16 @@
             font-family: 'Roboto',sans-serif;
             margin-right: 10rem;
             transition:border 0.1s ease-out;
-            background-color:#fff;
-            border: 1rem solid #fff;
+            background-color: #3797C2;
+            border: 1rem solid #3797C2;
             border-radius: 8px;
+            color: #fff;
         }
         .link:hover{
-            background-color:rgb(144, 223, 243);
-            border: 1rem solid rgb(144, 223, 243);
+            background-color:rgb(255, 255, 255);
+            border: 1rem solid rgb(255, 255, 255);
             border-radius: 8px;
+            color: rgb(26, 25, 25)
             
         }
     

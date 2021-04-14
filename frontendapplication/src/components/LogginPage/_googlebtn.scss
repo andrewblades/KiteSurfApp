@@ -8,13 +8,14 @@
 	cursor: pointer;
 	font-size: 2.5rem;
     transition:border 0.1s ease-out;
-    background-color:rgb(240, 6, 6);
-    border: 1rem solid rgb(240, 6, 6);
+    background-color: #202020;
+    border: 1rem solid #202020;
     border-radius: 8px;
 }
 
 .signBtn:hover{
-    background-color:rgb(17, 17, 16);
-    border: 1rem solid rgb(17, 17, 16);
+    background-color:#fff;
+    border: 1rem solid #fff;
     border-radius: 8px;
+    color: #202020
 }

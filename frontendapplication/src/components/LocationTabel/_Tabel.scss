@@ -1,31 +1,65 @@
-table{
+.ContainerList{
+     margin-top: 5rem;
+     height: 70vh;
+
+    .theList{
+        width: 95%;
+        height: 40vh;
+        margin: auto;
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: repeat(6, calc(50% - 40px));
+        grid-template-rows: (150px, 1fr);
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        .Element{
+            border: 5px solid linear-gradient(90deg, rgba(55,81,194,1) 0%, rgba(107,163,198,1) 65%, rgba(255,255,255,1) 100%);
+            background: rgb(55,151,194);
+            background: linear-gradient(90deg, rgba(55,81,194,1) 0%, rgba(107,163,198,1) 65%, rgba(255,255,255,1) 100%);
+            border-radius: 7px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            .locH3{
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 4rem;
+                margin: 2rem 2rem;
+
+            }
+            .locP{
+              margin: 0.5rem 2rem;
+              color: #fff;
+              font-family: 'Roboto',sans-serif;
+            }
+        }
+    }
+}
+
+
+.ShowLink{
     
-    overflow-y:scroll;
-    height:300px;
-    display:block;
-    
-    margin-left:5rem;
+    height: 20vh;
+    margin-top: 8rem;
+    .showMoreLink{
+            font-size:3rem;
+            font-family: 'Roboto',sans-serif;
+            margin-right: 10rem;
+            transition:border 0.1s ease-out;
+            background-color: #3797C2;
+            border: 1rem solid #3797C2;
+            border-radius: 8px;
+            color: #fff;
+            margin-left: 60px;
+            text-decoration: none;
+            
+    }
+     .showMoreLink:hover{
+            background-color:rgb(255, 255, 255);
+            border: 1rem solid rgb(255, 255, 255);
+            border-radius: 8px;
+            color: rgb(26, 25, 25)
+            
+        }
 }
-
-
-tr, th{
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    width: 200px;
-    font-size: 20px;
-    height: 50px;
-
-}
-
-th{
-    background-color: #fff;
-
-}
-
-td{
-    height: 90px;
-    border: 1px solid #fff;
-    text-align: center; 
-    vertical-align: middle;
-}
-

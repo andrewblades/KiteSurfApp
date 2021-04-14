@@ -1,0 +1,23 @@
+.footer{
+    background-color:rgb(40, 43, 46);
+    color: #fff;
+    height: 15vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .footerH5{
+       font-family: 'Roboto', sans-serif;
+       font-weight: 400;
+    }
+    .footerName{
+       font-family: 'Lobster', sans-serif;
+       font-weight: 900;
+       font-size:40px;
+    }
+    .footerDate{
+       font-family: 'Roboto', sans-serif;
+       font-weight: 600;
+       font-size:10px;
+    }
+}

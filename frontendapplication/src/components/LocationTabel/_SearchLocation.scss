@@ -1,107 +1,23 @@
-.searchContainer{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-
-    h2{
-        margin-bottom: 4rem;
-        font-family: 'Roboto', sans-serif;
-        background-color:#fff;
-        border: 1rem solid #fff;
-        border-radius: 8px;
-    }
-
-    .search{
-        width: 50%;
-        height: 40px;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border:none;
-        border-radius: 8px;
-    }
-
-    .filterBtn{
-        
-        background: none;
-	    color: rgb(247, 247, 247);
-	    border: none;
-	    padding: 0;
-	    font-family: 'Roboto',sans-serif;
-        
-	    cursor: pointer;
-	    font-size: 2.5rem;
-        transition:border 0.1s ease-out;
-        background-color:rgb(240, 6, 6);
-        border: 1rem solid rgb(240, 6, 6);
-        border-radius: 8px;
-    }
-    
-    
-    .filterItemsContainer{
-         display: flex;
-         height: 24px;
-        margin-top: 3rem;
-    }
-    
-    
-
-    input {
-        height: 3.24rem;
-	    width: 3.28rem;
-	    background: rgba(241, 245, 248, 1);
-	    transition: background 250ms;
-	    border: 3px solid rgba(184, 194, 204, 1);
-	    border-radius: 0.125rem;
-        display:inline-block;
-	    vertical-align:middle;	
-    }
-
-    label {  
-    display:inline-block;
-	vertical-align:middle;	
-    font-family: arial;
    
+   .Locations{
+       margin-top: 20em;
+       
+   }
    
-    padding-left: 30px;
-    margin-bottom: 5px;
-    padding-top: 3px;
-    cursor: pointer;
-    font-size: 16px;
-}
- 
-}
-
-@media screen and (max-width: 800px){
-    .filterItemsContainer{
-         display: flex;
-         height: 16px;
-        margin-top: 3rem;
+    .locationsTitle{
+            margin-bottom: 30px;
+            background-color: #3751c2;
+            width: 300px;
+            border: 3px solid #3751c2;
+            border-radius: 7px;
+            margin-left: 5rem;
+          .locationHeader{
+              font-family:'Roboto', sans-serif;
+            font-size: 50px;
+          
+            color:#fff;
+            display:flex;
+            justify-content: center;
+          }
     }
 
-        input {
-        height: 2.24rem;
-	    width: 2.28rem;
-	    background: rgba(241, 245, 248, 1);
-	    transition: background 250ms;
-	    border: 3px solid rgba(184, 194, 204, 1);
-	    border-radius: 0.125rem;
-        display:inline-block;
-	    vertical-align:middle;	
-    }
-
-    label {  
-    display:inline-block;
-	vertical-align:middle;	
-    font-family: arial;
-   
-   
-    padding-left: 30px;
-    margin-bottom: 5px;
-    padding-top: 3px;
-    cursor: pointer;
-    font-size: 10px;
-}
-}

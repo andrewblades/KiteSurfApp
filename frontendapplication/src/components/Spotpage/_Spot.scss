@@ -1,6 +1,6 @@
 .SpotCard{
    color: #fff;
-   
+   width: 50rem;
    display:flex;
    flex-direction: column;
    justify-content: center;
@@ -11,10 +11,10 @@
    margin-top: 5rem;
    height: 600px;
    border-radius: 18px;
-   box-shadow: 0px -2px 57px -5px rgba(0,0,0,0.66);
-   background: rgb(189,122,235);
-   background: linear-gradient(90deg, rgba(189,122,235,1) 0%, rgba(246,133,133,1) 50%, rgba(252,201,129,1) 100%);
-   
+   box-shadow: 0px -2px 57px -5px rgba(0,0,0,0.2);
+
+   background: rgb(55,151,194);
+  background: linear-gradient(90deg, rgba(55,81,194,1) 0%, rgba(107,163,198,1) 65%, rgba(255,255,255,1) 100%);
 
    .title{
        display:flex;
@@ -22,23 +22,20 @@
        
        justify-content: center;
        padding-left: 20px;
+       margin-bottom: 10px;
    }
    
 
    h3{ 
-
-     
-     
-       
        font-size: 40px;
-    
-      
-       color: #202020
+       font-family: 'Roboto', sans-serif;
    }
-   .subTitle{
-       color: rgb(48, 47, 47)
-   }
+  
    p{
        font-size: 20px;
+       font-family: 'Roboto', sans-serif;
+   }
+   h4{
+       font-family: 'Roboto', sans-serif;
    }
 }

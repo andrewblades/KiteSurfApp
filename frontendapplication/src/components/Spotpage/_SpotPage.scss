@@ -1,6 +1,14 @@
 .spotCardsContainer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+       
+        grid-template-columns: repeat(89, calc(30% - 100px));
+        grid-template-rows: (150px, 1fr);
+        grid-auto-flow: column;
+        overflow-x: scroll;
+}
+
+
+
+@media (min-width:600px) {
+
 }
