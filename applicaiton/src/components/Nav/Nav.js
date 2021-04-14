@@ -15,7 +15,7 @@ function Nav() {
                 <div className='line'></div>
                 <div className='line'></div>
             </div>
-            {!open ? <div className='navRightSide' id='navRightSide'>
+            {!open ? <div className='openNav navRightSide' >
                 <Link to='/spot' className='link'>
                     Spots
                 </Link>
@@ -25,7 +25,7 @@ function Nav() {
                 <GoogleAuth />
             </div>
                 :
-                <div className='openNav' id='openNav'>
+                <div className='openNav' >
                     <Link to='/spot' className='link'>
                         Spots
                 </Link>
