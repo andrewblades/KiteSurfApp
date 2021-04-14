@@ -1,8 +1,8 @@
-# Problema Front End Atta Systems
 
-# Pasul 1 Basic Start 
 
--- create aplicatie si adaugare dependente cum ar fi:
+# Phase 1 Basic Start 
+
+-- creating the app and adding the dependencies
 
 react-router-dom 
 react-redux redux 
@@ -12,35 +12,36 @@ react-leaflet leaflet
 
 # Pasul 2 Map Component
 
--- implementare harta cu ajutorul leaflet folosind componente deja existente 
-- pentru detalii vezi : https://react-leaflet.js.org/docs
+-- map implementantion with the help of leaflet 
+- this is how to use leaflet in react : https://react-leaflet.js.org/docs
 
 
 # Pasul 3 Redux
 
--- implementare redux , actiuni, reducers, si componenta store, 
-- prin Providerul oferit de react-redux am dat acces tuturor componenetelor la store
+-- redux implementation with all the good stuff
 
-# Pasul 4 Data Tabel si afisare locatii pe Harta
+# Pasul 4 Making a list of all the places 
 
--- crearea componentului tabel cu toate datele oferite de API 
--- filtrarea datelor in functie de categorie si numele lor
--- afisare locatii pe harta 
+-- create the list component with the data from the API
 
-
-# Pasul 5 Implementare autentificare folosing OAuth Google Api
-
--- implementare ca si component si implementare redux
--- memorare utilizator pe baza de token
+-- show locations on the map
 
 
-# Pasul 5 Stilizare pentru desktop
+# Pasul 5 Implementation of OAuth sign in from Google Api
 
--- stilizare navbar cu butoane pentru accesare linkuri si button de Sign in
--- stilizare forma de filtrare tabel si stilizare tabel
--- stilizare checkbox-uri afisare orizontal
--- stilizare pagini Spots si Users cu carduri pentru afisare detalii
+-- creating the component and the redux part to be able to check if the 
+user is logged in from any component if needed
+-- saving the user log in untill he logs out
 
-# Pasul 6 Stilizare mobile
 
--- adaugare functionalitate la navigatie printr-un buton 'burger' ce afiseaza un meniu pe ecranele mici
+# Pasul 5 Desktop Css using Sass for an eazier time
+
+-- the nav with the buttons and logo
+-- some nice pictures of a surfer and some nice placed text
+-- the map needed some love so we gave her some personal space
+-- the list also needed to be shown in a scrollable horizontal fesion
+also did the same to the all spots page and all user page 
+
+# Pasul 6 Mobile Styles
+
+-- this I will do tomorrow
